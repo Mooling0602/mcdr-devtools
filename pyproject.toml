@@ -1,8 +1,24 @@
 [project]
 name = "mcdr-devtools"
 version = "0.1.0"
-description = "Develop tools for MCDReforged."
+description = "Development tools for MCDReforged."
 readme = "README.md"
 authors = [{ name = "Mooling0602", email = "clemooling@outlook.com" }]
 requires-python = ">=3.14"
 dependencies = ["mcdreforged>=2.1.0"]
+
+[dependency-groups]
+docs = [
+  "jieba>=0.42.1",
+  "sphinx>=9.0",
+  "sphinx-autobuild>=2025.8.25",
+  "sphinx-autodoc-typehints>=3.6.1",
+  "sphinx-copybutton>=0.5.2",
+  "sphinx-design>=0.7.0",
+  "sphinx-inline-tabs>=2025.12.21.14",
+  "sphinx-intl>=2.3.2",
+  "sphinx-prompt>=1.10.2",
+  "sphinx-rtd-theme>=3.0.0rc1",
+  "sphinxcontrib-asciinema>=0.4.3",
+  "sphinxcontrib-mermaid>=2.0.0",
+]

@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Mooling0602
+# This file is distributed under the same license as the mcdr-devtools
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mcdr-devtools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-11 16:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/api.rst:2
+msgid "Code References"
+msgstr ""
+
+#: ../../source/api.rst:4
+msgid "Read this page to know how to use mcdr-devtools."
+msgstr ""
+
+#: ../../source/api.rst:6
+msgid "Every public name can be imported from ``mcdr_devtools`` directly."
+msgstr ""
+
+#: ../../source/api.rst:9
+msgid "Tools"
+msgstr ""
+
+#: mcdr_devtools:1 of
+msgid "Development tools for MCDReforged."
+msgstr ""
+
+#: mcdr_devtools:3 of
+msgid ""
+"The names defined here are scaffolding for the documentation build, so "
+"autodoc has something to render. Replace them as real tools land."
+msgstr ""
+
+#: ../../source/api.rst:15
+msgid "Real API path: ``mcdr_devtools``"
+msgstr ""
+
+#: mcdr_devtools.ToolName:1 of
+msgid "Name that identifies a tool."
+msgstr ""
+
+#: mcdr_devtools.DevToolsError:1 of
+msgid "Raised when a tool spec cannot be used."
+msgstr ""
+
+#: mcdr_devtools.ToolSpec:1 of
+msgid "Description of a single tool."
+msgstr ""
+
+#: ../../source/api.rst
+msgid "Parameters"
+msgstr ""
+
+#: mcdr_devtools.ToolSpec:3 of
+msgid "unique name of the tool."
+msgstr ""
+
+#: mcdr_devtools.ToolSpec:4 of
+msgid ""
+"one-line description of what the tool does, empty when the tool has no "
+"summary to show."
+msgstr ""
+
+#: mcdr_devtools.describe:1 of
+msgid "Renders ``spec`` as one display line."
+msgstr ""
+
+#: mcdr_devtools.describe:3 of
+msgid "the tool to describe."
+msgstr ""
+
+#: ../../source/api.rst
+msgid "Returns"
+msgstr ""
+
+#: mcdr_devtools.describe:4 of
+msgid "``\"<name>: <summary>\"``, or the bare name when the summary is empty."
+msgstr ""
+
