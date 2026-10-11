@@ -1,6 +1,7 @@
 ---
 name: prune-comments-and-docs
 description: Review and tighten code comments, docstrings, and prose docs (README, guides, design notes). Use when asked to review, clean up, cut, or improve comments or documentation.
+origin: https://github.com/MidAutumnMoon/TaysiTsuki/blob/master/home/agents/skills/prune-comments-and-docs/SKILL.md
 ---
 
 # Prune comments and docs
@@ -81,6 +82,7 @@ def discover(root: Path) -> list[AgentDef]:
         parse. The exception includes the failing path.
     """
 
+
 # After
 def discover(root: Path) -> list[AgentDef]:
     """Loads every ``.toml`` agent definition under ``root``, recursively.
@@ -120,6 +122,7 @@ def download(url: str) -> bytes:
     The old ``fetch_verified`` helper has been removed.
     """
 
+
 # After
 def download(url: str) -> bytes:
     """Downloads the archive from ``url`` without verifying it.
@@ -136,13 +139,16 @@ The caller needs their obligation, not the architecture's history. `fetch_verifi
 # Before
 """An interrupted run retries against the previous state and converges."""
 
+
 class State:
     def write(self) -> None:
         """Atomically installs the state. A failure leaves the previous state
         intact, so a retry converges.
         """
 
+
 import unittest
+
 
 class StateTest(unittest.TestCase):
     # Retry converges and records the new generation.
@@ -154,8 +160,10 @@ class StateTest(unittest.TestCase):
         retried.write()
         self.assertEqual(retried.generation, first.generation + 1)
 
+
 # After
 """An interrupted run retries against the previous state and converges."""
+
 
 class State:
     def write(self) -> None:
@@ -163,7 +171,9 @@ class State:
         intact.
         """
 
+
 import unittest
+
 
 class StateTest(unittest.TestCase):
     def test_retry_converges(self) -> None:
@@ -189,6 +199,7 @@ def thumbnail(self, image_id: ImageId) -> Thumbnail:
     evicting the least recently used entry. Lanczos is used because bilinear
     softened the line art visibly.
     """
+
 
 # After
 def thumbnail(self, image_id: ImageId) -> Thumbnail:
